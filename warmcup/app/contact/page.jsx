@@ -20,7 +20,7 @@ export default function Contact() {
                             Get in Touch
                         </h1>
                         <p className="text-gray-400 text-lg">
-                            Have a question or just want to say hi? We'd love to hear from you.
+                            Have a question or just want to say hi? We&apos;d love to hear from you.
                         </p>
                     </div>
 
