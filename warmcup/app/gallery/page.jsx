@@ -6,31 +6,53 @@ import Link from "next/link";
 
 export default function Gallery() {
     const projects = [
+
         {
-            id: 1,
-            title: "Warm Cup",
-            description: "A platform for creators to receive support and appreciation from their audience.",
-            category: "Full Stack",
-            icon: <Rocket size={24} className="text-cyan-400" />,
-            link: "/",
-        },
-        {
-            id: 2,
-            title: "Portfolio V1",
+            id: 0,
+            title: "Personal Website",
             description: "My personal developer portfolio showcasing skills, experience, and creative work.",
             category: "Frontend",
             icon: <Code2 size={24} className="text-purple-400" />,
             link: "https://mrpatra.vercel.app/",
         },
         {
-            id: 3,
+            id: 1,
+            title: "ValuneX",
+            description: "Currency Converter – A web-based tool designed to convert values between multiple international currencies instantly.",
+            category: "Full Stack",
+            icon: <Rocket size={24} className="text-cyan-400" />,
+            link: "https://valunex.netlify.app/",
+        },
+
+        {
+            id: 2,
             title: "Creative UI Kit",
             description: "A collection of modern, glassmorphism UI components built with Tailwind CSS.",
             category: "Design",
             icon: <Paintbrush size={24} className="text-pink-400" />,
             link: "#",
         },
-        // Add more projects here
+ 
+        {
+            id: 3,
+            title: "Battery Report",
+            description: "A modern, full-stack MERN application that provides real-time telemetry and historical data for your Windows laptop's battery health. Built with a beautiful, dark-themed UI using Tailwind CSS and Glassmorphism design principles..",
+            link: "https://batteryhelth.vercel.app/",
+        },
+        {
+            id: 4,
+            title: "TIC TAC TOE GAME",
+            description: "Tic Tac Toe Challenge – A simple yet engaging browser-based game where two players compete for victory. Designed with clean UI and smart game logic that instantly declares the winner or draw — perfect for testing your strategy skills!",
+            link: "https://ticbox.netlify.app/",
+        },
+
+        {
+            id: 5,
+            title: "ACTION PLAN",
+            description: "TODO LIST - A task management application that helps users organize and prioritize their daily activities. With a simple interface, users can add, edit, and delete tasks, set deadlines, and mark tasks as complete, enhancing productivity and time management",
+            link: "https://actionp.netlify.app/",
+
+        },
     ];
 
     return (
