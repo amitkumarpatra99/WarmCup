@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 export default function Contact() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-[#0a1120] via-[#0f1a30] to-[#0a0f1a] text-white flex justify-center items-center px-4 py-16 md:py-24 relative overflow-hidden">
+        <div className="min-h-screen bg-gradient-to-br from-[#0a1120] via-[#0f1a30] to-[#0a0f1a] text-white flex justify-center items-start px-4 pt-28 md:pt-40 pb-12 relative overflow-hidden">
 
             {/* ✨ Background Glow */}
             <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,#38bdf822,transparent_60%),radial-gradient(circle_at_bottom_left,#2563eb22,transparent_60%)] pointer-events-none"></div>
