@@ -1,6 +1,6 @@
 # Warm Cup ☕ — Creator Support Platform
 
-**Warm Cup** is a modern, dark-themed platform designed to help creators (developers, artists, musicians, writers, etc.) receive support from their audience. Inspired by "Buy Me a Coffee," it brings a premium **Dark Glassmorphism** design, smooth animations, and a seamless user experience.
+**Warm Cup** is a modern, dark-themed platform designed to help creators (developers, artists, musicians, writers, etc.) receive support from their audience. Inspired by "Buy Me a Coffee," it brings a premium **Dark Glassmorphism** design, smooth animations, and a seamless user experience
 
 Creators can showcase their work, answer questions, and receive direct support—one warm cup at a time.
 
