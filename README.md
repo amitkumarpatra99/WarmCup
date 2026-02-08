@@ -77,7 +77,7 @@ RAZORPAY_KEY_SECRET=your_razorpay_key_secret
 
 ---
 
-## 📂 Project 
+## 📂 Project Structure
 
 ```bash
 warmcup/
