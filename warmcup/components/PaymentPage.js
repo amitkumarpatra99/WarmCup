@@ -48,7 +48,6 @@ const PaymentPage = () => {
         </p>
       </motion.div>
 
-      {/* 💳 Payment Card */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
