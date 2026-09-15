@@ -58,7 +58,6 @@ const PaymentPage = () => {
       >
         <div className="flex flex-col gap-5">
 
-          {/* 👤 Name */}
           <div>
             <label className="block text-sm text-gray-300 mb-1">Your Name</label>
             <input
