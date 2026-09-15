@@ -31,7 +31,6 @@ const PaymentPage = () => {
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-[#0a1120] via-[#0f1a30] to-[#0a0f1a] flex flex-col items-center justify-center text-white px-6 pt-28 pb-20 relative">
 
-      {/* 🌟 Hero Section */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
