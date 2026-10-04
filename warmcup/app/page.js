@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from "react";
@@ -18,10 +17,8 @@ export default function Home() {
 
   return (
     <>
-      {/* PAGE BACKGROUND FIX — WRAPS WHOLE PAGE */}
       <div className="min-h-screen w-full bg-gradient-to-br from-[#0a1120] via-[#0f1a30] to-[#0a0f1a]">
 
-        {/* 🌟 HERO SECTION */}
         <section
           className="relative flex flex-col items-center justify-center 
           min-h-[90vh] md:min-h-screen text-center 
@@ -30,13 +27,10 @@ export default function Home() {
           pt-32 md:pt-40 pb-20"
         >
 
-          {/* subtle background pattern */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#38bdf822,transparent_70%),radial-gradient(circle_at_bottom_right,#2563eb22,transparent_70%)]"></div>
 
-          {/* Hero Content */}
           <div className="relative z-10 flex flex-col items-center gap-6 max-w-3xl w-full">
 
-            {/* Animated Neon Icon + Title */}
             <h1
               className="flex flex-col md:flex-row items-center justify-center gap-4 
               font-extrabold uppercase  
@@ -86,7 +80,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* glowing orbs */}
           <div
             className="absolute top-16 right-10 md:right-20 
             w-48 h-48 md:w-72 md:h-72 
@@ -102,17 +95,14 @@ export default function Home() {
           ></div>
         </section>
 
-        {/* ✨ DIVIDER */}
         <div className="bg-white h-[1px] opacity-10 w-full"></div>
 
-        {/* 🚀 FEATURES SECTION */}
         <section className="text-white max-w-6xl mx-auto py-20 md:py-28 px-4 sm:px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-12 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
             Why Warm Cup?
           </h2>
 
           <div className="grid gap-8 sm:gap-10 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-            {/* Card 1 */}
             <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col items-center hover:scale-105 hover:shadow-cyan-400/30 transition-all duration-300">
               <FaUsers className="text-4xl text-cyan-400 mb-4" />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Connect With Supporters</h3>
@@ -121,7 +111,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 2 */}
             <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col items-center hover:scale-105 hover:shadow-cyan-400/40 transition-all duration-300">
               <BiMoney className="text-4xl text-teal-400 mb-4" />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Instant Earnings</h3>
@@ -130,7 +119,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 3 */}
             <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col items-center hover:scale-105 hover:shadow-blue-400/30 transition-all duration-300">
               <FaCode className="text-4xl text-blue-400 mb-4" />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Built for Creators</h3>
@@ -141,17 +129,14 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ✨ DIVIDER */}
         <div className="bg-white h-[1px] opacity-10 w-full"></div>
 
-        {/* 💎 SHOWCASE SECTION */}
         <section className="text-white max-w-6xl mx-auto py-20 md:py-28 px-4 sm:px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-12 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
             Join the Warm Cup Community
           </h2>
 
           <div className="grid gap-8 sm:gap-10 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-            {/* Showcase Card 1 */}
             <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col items-center hover:scale-105 hover:shadow-cyan-400/30 transition-all duration-300">
               <FaGift className="text-4xl text-cyan-400 mb-4" />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Support & Earn</h3>
@@ -166,7 +151,6 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Showcase Card 2 */}
             <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col items-center hover:scale-105 hover:shadow-blue-400/30 transition-all duration-300">
               <FaHeart className="text-4xl text-blue-400 mb-4" />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Spread Kindness</h3>
@@ -181,7 +165,6 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Showcase Card 3 */}
             <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col items-center hover:scale-105 hover:shadow-cyan-400/30 transition-all duration-300">
               <FaBolt className="text-4xl text-cyan-400 mb-4" />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Empower Creators</h3>
@@ -199,7 +182,6 @@ export default function Home() {
         </section>
 
       </div>
-      {/* END PAGE WRAPPER */}
     </>
   );
 }
