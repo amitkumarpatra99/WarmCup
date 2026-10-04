@@ -9,10 +9,8 @@ export default function About() {
   return (
     <div className="min-h-screen flex flex-col items-center text-white bg-gradient-to-br from-[#0a1120] via-[#0f1a30] to-[#0a0f1a] relative overflow-hidden">
 
-      {/* ✨ Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#38bdf833,transparent_70%),radial-gradient(circle_at_bottom_right,#2563eb33,transparent_70%)]"></div>
 
-      {/* 🌟 Hero Section */}
       <section className="relative w-full text-center pt-32 px-6 z-10">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-lg">
           About Warm Cup
@@ -23,10 +21,8 @@ export default function About() {
         </p>
       </section>
 
-      {/* 💻 Creator Section */}
       <section className="relative flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-8 py-24 gap-10 z-10">
 
-        {/* Profile Image */}
         <div className="relative">
           <Image
             src="/DP.jpg"
@@ -40,8 +36,6 @@ export default function About() {
           </div>
         </div>
 
-
-        {/* Info */}
         <div className="max-w-xl text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
             Amit Kumar Patra
@@ -54,7 +48,6 @@ export default function About() {
 
           <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-6">
 
-            {/* ⭐ Explore Projects → GitHub Link */}
             <Link
               href="https://github.com/amitkumarpatra99"
               target="_blank"
@@ -66,7 +59,6 @@ export default function About() {
               <FaBolt /> Explore Projects
             </Link>
 
-            {/* ⭐ Contact Me → GitHub / Portfolio / Any Link */}
             <Link
               href="https://mrpatra.vercel.app/"
               target="_blank"
@@ -82,10 +74,8 @@ export default function About() {
         </div>
       </section>
 
-      {/* 🚀 Features Section */}
       <section className="relative w-full max-w-6xl mx-auto px-6 py-20 grid gap-8 md:grid-cols-3 z-10">
 
-        {/* Card 1 */}
         <div className="bg-white/10 border border-white/10 rounded-3xl p-8 text-center backdrop-blur-xl hover:scale-105 hover:shadow-cyan-500/30 transition-all duration-300">
           <Coffee className="text-4xl mx-auto text-cyan-400 mb-4" />
           <h3 className="font-semibold text-xl mb-2 text-white">Send a Warm Cup</h3>
@@ -94,7 +84,6 @@ export default function About() {
           </p>
         </div>
 
-        {/* Card 2 */}
         <div className="bg-white/10 border border-white/10 rounded-3xl p-8 text-center backdrop-blur-xl hover:scale-105 hover:shadow-blue-500/30 transition-all duration-300">
           <FaUsers className="text-4xl mx-auto text-blue-400 mb-4" />
           <h3 className="font-semibold text-xl mb-2 text-white">Connect with Supporters</h3>
@@ -103,7 +92,6 @@ export default function About() {
           </p>
         </div>
 
-        {/* Card 3 */}
         <div className="bg-white/10 border border-white/10 rounded-3xl p-8 text-center backdrop-blur-xl hover:scale-105 hover:shadow-cyan-400/30 transition-all duration-300">
           <FaHeart className="text-4xl mx-auto text-pink-400 mb-4" />
           <h3 className="font-semibold text-xl mb-2 text-white">Spread Kindness</h3>
@@ -114,7 +102,6 @@ export default function About() {
 
       </section>
 
-      {/* 🌌 Bottom Gradient Glow */}
       <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-blue-900/40 to-transparent"></div>
     </div>
   );
