@@ -8,12 +8,10 @@ export default function Contact() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-[#0a1120] via-[#0f1a30] to-[#0a0f1a] text-white flex justify-center items-start px-4 pt-28 md:pt-40 pb-12 relative overflow-hidden">
 
-            {/* ✨ Background Glow */}
             <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,#38bdf822,transparent_60%),radial-gradient(circle_at_bottom_left,#2563eb22,transparent_60%)] pointer-events-none"></div>
 
             <div className="relative max-w-5xl w-full grid md:grid-cols-2 gap-10 z-10">
 
-                {/* 📬 Left Side - Contact Info */}
                 <div className="flex flex-col justify-center space-y-8">
                     <div>
                         <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">
@@ -51,7 +49,6 @@ export default function Contact() {
                     </div>
                 </div>
 
-                {/* 📝 Right Side - Contact Form */}
                 <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl">
                     <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert("Message sent!"); }}>
                         <div>
