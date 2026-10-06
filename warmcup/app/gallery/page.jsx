@@ -65,12 +65,10 @@ export default function Gallery() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0a1120] via-[#0f1a30] to-[#0a0f1a] text-white px-6 py-20 md:py-32 relative overflow-hidden">
       
-      {/* ✨ Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#38bdf815,transparent_50%),radial-gradient(circle_at_bottom_left,#2563eb15,transparent_50%)] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto z-10">
 
-        {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">
             Project Gallery
@@ -81,7 +79,6 @@ export default function Gallery() {
           </p>
         </div>
 
-        {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
