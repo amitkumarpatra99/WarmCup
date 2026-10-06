@@ -78,7 +78,6 @@
   animation: pulse-slow 3s ease-in-out infinite;
 }
 
-/* Custom Sleek Scrollbar */
 .custom-scrollbar::-webkit-scrollbar {
   width: 5px;
 }
