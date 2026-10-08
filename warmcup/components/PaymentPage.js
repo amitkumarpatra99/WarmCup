@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useState } from "react";
@@ -81,7 +80,6 @@ const PaymentPage = () => {
             />
           </div>
 
-          {/* 💰 Amount */}
           <div>
             <label className="block text-sm text-gray-300 mb-1">Amount (₹)</label>
             <input
@@ -95,7 +93,6 @@ const PaymentPage = () => {
             />
           </div>
 
-          {/* 🔘 Pay Now Button */}
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -106,7 +103,6 @@ const PaymentPage = () => {
             PAY
           </motion.button>
 
-          {/* ⚡ Quick Amount Buttons */}
           <div className="flex justify-center flex-wrap gap-3 mt-4">
             {[99, 199, 299, 499].map((amt) => (
               <motion.button
@@ -125,7 +121,6 @@ const PaymentPage = () => {
         </div>
       </motion.div>
 
-      {/* Glowing blur elements FIXED ✔ */}
       <div className="pointer-events-none absolute top-20 right-24 w-64 h-64 bg-blue-600 rounded-full blur-[120px] opacity-25 animate-pulse"></div>
       <div className="pointer-events-none absolute bottom-20 left-20 w-64 h-64 bg-cyan-500 rounded-full blur-[130px] opacity-25 animate-pulse"></div>
 
