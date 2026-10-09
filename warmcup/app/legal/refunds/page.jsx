@@ -6,7 +6,6 @@ export default function RefundPolicy() {
     <div className="min-h-screen bg-gradient-to-br from-[#0a1120] via-[#0f1a30] to-[#0a0f1a] text-white px-6 py-24 flex justify-center">
       <div className="max-w-4xl bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12 shadow-xl">
 
-        {/* Header */}
         <div className="flex items-center gap-3 mb-6">
           <div className="p-3 rounded-full bg-teal-600/30">
             <RotateCcw size={28} className="text-teal-400" />
