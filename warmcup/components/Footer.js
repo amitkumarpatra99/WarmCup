@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from "react";
@@ -47,7 +46,6 @@ const Footer = () => {
       icon: <Twitter size={18} />,
       link: "https://x.com/mr_patra_",
     },
-
   ];
 
   const quickLinks = [
@@ -80,12 +78,10 @@ const Footer = () => {
   return (
     <footer className="relative text-gray-300 py-16 px-6 border-t border-cyan-700/20 bg-gradient-to-b from-[#0a1120] via-[#0f1a30] to-[#0a0f1a] overflow-hidden">
 
-      {/* ✨ Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#0ea5e922,transparent_70%),radial-gradient(circle_at_bottom_right,#2563eb22,transparent_70%)]"></div>
 
       <div className="relative max-w-7xl mx-auto grid md:grid-cols-4 gap-12 z-10">
 
-        {/* 1️⃣ Brand Section */}
         <div>
           <div className="flex items-center gap-2 mb-4 select-none">
             <div className="w-11 h-11 flex items-center justify-center rounded-full bg-white/10 border border-white/10 shadow-lg">
@@ -101,7 +97,6 @@ const Footer = () => {
             Helping creativity stay inspired and connected.
           </p>
 
-          {/* 🌐 Social Icons */}
           <div className="flex space-x-4 mt-5">
             {icons.map((item) => (
               <a
@@ -127,7 +122,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* 2️⃣ Quick Links */}
         <div className="lg:ml-10">
           <h3 className="text-lg font-semibold text-white">Quick Links</h3>
           <div className="w-20 h-[3px] rounded-full mb-4 mt-2 lg:ml-1 bg-gradient-to-r from-cyan-400 to-blue-500 shadow-[0_0_10px_#38bdf8]"></div>
@@ -146,7 +140,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* 3️⃣ Legal Section (NEW) */}
         <div>
           <h3 className="text-lg font-semibold text-white">Legal</h3>
           <div className="w-[65px] h-[3px] rounded-full mb-4 mt-2 lg:ml-1 bg-gradient-to-r from-cyan-400 to-blue-500 shadow-[0_0_10px_#38bdf8]"></div>
@@ -166,7 +159,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* 4️⃣ Contact Section */}
         <div>
           <h3 className="text-lg font-semibold text-white">Contact</h3>
           <div className="w-[65px] h-[3px] rounded-full mb-4 mt-2 lg:ml-1 bg-gradient-to-r from-cyan-400 to-blue-500 shadow-[0_0_10px_#38bdf8]"></div>
@@ -213,7 +205,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="relative border-t border-cyan-700/20 mt-10 pt-6 text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
         <p>© {new Date().getFullYear()} Warm Cup — All Rights Reserved</p>
 
