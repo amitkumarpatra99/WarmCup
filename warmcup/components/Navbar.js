@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
@@ -36,7 +35,6 @@ export default function Navbar() {
   const [hoveredPath, setHoveredPath] = useState(null);
   const navRef = useRef(null);
 
-  // Detect scroll for adaptive glassmorphism depth
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 15) {
@@ -51,12 +49,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile drawer on route change
   useEffect(() => {
     setMobileOpen(false);
   }, [pathname]);
 
-  // Lock body scroll when mobile menu is open & listen for escape key
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape") setMobileOpen(false);
@@ -75,7 +71,6 @@ export default function Navbar() {
     };
   }, [mobileOpen]);
 
-  // Check if link is active
   const isActive = (path) => {
     if (path === "/") return pathname === "/";
     return pathname?.startsWith(path);
@@ -96,19 +91,15 @@ export default function Navbar() {
                 : "bg-[#0b1329]/75 backdrop-blur-lg border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.45)] hover:border-cyan-500/25 py-2 sm:py-2.5 md:py-3 px-3 sm:px-4 md:px-6"
             }`}
           >
-            {/* Ambient top light gradient */}
             <div className="absolute inset-x-12 top-0 h-[1px] bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent pointer-events-none" />
 
             <div className="flex items-center justify-between gap-1.5 sm:gap-3 md:gap-4">
-              {/* 🌟 BRAND LOGO */}
               <Link
                 href="/"
                 className="group flex items-center gap-2 sm:gap-2.5 md:gap-3 select-none outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-full py-0.5 sm:py-1 shrink-0"
                 aria-label="Warm Cup Home"
               >
-                {/* Steaming Coffee Badge */}
                 <div className="relative flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-cyan-500/20 via-blue-600/15 to-transparent border border-cyan-400/30 shadow-[0_0_15px_rgba(6,182,212,0.25)] group-hover:scale-105 group-hover:border-cyan-400/60 group-hover:shadow-[0_0_20px_rgba(6,182,212,0.4)] transition-all duration-300 shrink-0">
-                  {/* Rising Steam Effect */}
                   <div className="absolute -top-1.5 flex gap-0.5 justify-center w-full pointer-events-none">
                     <span className="w-0.5 h-2 bg-cyan-300/80 rounded-full animate-steam-1" />
                     <span className="w-0.5 h-2.5 bg-blue-300/80 rounded-full animate-steam-2" />
@@ -117,7 +108,6 @@ export default function Navbar() {
                   <Coffee className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-cyan-400 group-hover:rotate-12 transition-transform duration-300 shrink-0" />
                 </div>
 
-                {/* Brand Text */}
                 <div className="flex flex-col text-left">
                   <div className="flex items-center gap-1 sm:gap-1.5">
                     <span className="font-black text-xs sm:text-sm md:text-base tracking-wider text-white group-hover:text-cyan-200 transition-colors whitespace-nowrap">
@@ -134,7 +124,6 @@ export default function Navbar() {
                 </div>
               </Link>
 
-              {/* 💻 DESKTOP NAV LINKS (md and up) */}
               <div
                 className="hidden md:flex items-center gap-0.5 lg:gap-1 bg-white/[0.03] border border-white/[0.06] rounded-full p-1 shadow-inner"
                 onMouseLeave={() => setHoveredPath(null)}
@@ -154,7 +143,6 @@ export default function Navbar() {
                           : "text-gray-300 hover:text-white"
                       }`}
                     >
-                      {/* Hover Animated Pill */}
                       {hoveredPath === item.href && (
                         <motion.span
                           layoutId="navbar-hover-pill"
@@ -163,7 +151,6 @@ export default function Navbar() {
                         />
                       )}
 
-                      {/* Active Indicator Glow */}
                       {active && !hoveredPath && (
                         <motion.span
                           layoutId="navbar-active-pill"
@@ -175,7 +162,6 @@ export default function Navbar() {
                       <Icon className={`w-3.5 h-3.5 shrink-0 ${active ? "text-cyan-400" : "text-gray-400"}`} />
                       <span>{item.name}</span>
 
-                      {/* Active bottom glow dot */}
                       {active && (
                         <span className="w-1 h-1 rounded-full bg-cyan-400 shadow-[0_0_6px_#38bdf8] shrink-0" />
                       )}
@@ -184,29 +170,23 @@ export default function Navbar() {
                 })}
               </div>
 
-              {/* ⚡ RIGHT ACTIONS (Desktop CTA & Mobile Controls) */}
               <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 shrink-0">
-                {/* Desktop "Give a Cup" Button */}
                 <button
                   onClick={() => router.push("/paymentpage")}
                   className="hidden md:relative md:inline-flex group items-center justify-center p-[1px] rounded-full overflow-hidden shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 shrink-0"
                   aria-label="Give a Cup to support"
                 >
-                  {/* Rotating Gradient Border */}
                   <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 rounded-full opacity-90 group-hover:opacity-100 transition-opacity" />
 
-                  {/* Inner Button Content */}
                   <span className="relative flex items-center gap-1.5 lg:gap-2 px-3.5 py-1.5 lg:px-5 lg:py-2 text-xs lg:text-sm font-semibold text-white bg-[#0b1329]/80 rounded-full backdrop-blur-sm group-hover:bg-[#0b1329]/60 transition-colors whitespace-nowrap">
                     <Coffee className="w-3.5 h-3.5 lg:w-4 lg:h-4 text-cyan-300 group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-300 shrink-0" />
                     <span>Give a Cup</span>
                     <Heart className="w-3 h-3 lg:w-3.5 lg:h-3.5 text-pink-400 fill-pink-400 animate-pulse-slow shrink-0" />
 
-                    {/* Shimmer sweep effect */}
                     <span className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-shimmer pointer-events-none" />
                   </span>
                 </button>
 
-                {/* Mobile "Give a Cup" Quick Action */}
                 <button
                   onClick={() => router.push("/paymentpage")}
                   aria-label="Donate a cup"
@@ -217,7 +197,6 @@ export default function Navbar() {
                   <span className="min-[360px]:hidden">Give</span>
                 </button>
 
-                {/* 📱 MOBILE HAMBURGER BUTTON */}
                 <button
                   type="button"
                   aria-expanded={mobileOpen}
@@ -250,11 +229,9 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* 📱 MOBILE NAVIGATION DRAWER & BACKDROP */}
       <AnimatePresence>
         {mobileOpen && (
           <>
-            {/* Backdrop overlay */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -265,7 +242,6 @@ export default function Navbar() {
               aria-hidden="true"
             />
 
-            {/* Slide-Down Menu Sheet */}
             <motion.div
               id="mobile-menu-drawer"
               initial={{ opacity: 0, y: -20, scale: 0.96 }}
@@ -275,10 +251,8 @@ export default function Navbar() {
               className="fixed inset-x-3 sm:inset-x-6 top-16 sm:top-20 z-50 md:hidden max-w-md mx-auto max-h-[calc(100dvh-5rem)] overflow-y-auto overscroll-contain custom-scrollbar rounded-3xl"
             >
               <div className="rounded-3xl bg-gradient-to-b from-[#0e172e]/95 via-[#080d1b]/95 to-[#050811]/98 border border-cyan-500/25 p-4 sm:p-5 shadow-[0_20px_50px_rgba(0,0,0,0.85)] backdrop-blur-2xl overflow-hidden relative">
-                {/* Top Subtle Glow */}
                 <div className="absolute inset-x-8 top-0 h-[1px] bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent pointer-events-none" />
 
-                {/* Header inside drawer */}
                 <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/10">
                   <div className="flex items-center gap-2">
                     <div className="w-7 h-7 rounded-full bg-cyan-500/20 border border-cyan-400/30 flex items-center justify-center shrink-0">
@@ -291,7 +265,6 @@ export default function Navbar() {
                   </span>
                 </div>
 
-                {/* Staggered Navigation Links */}
                 <ul className="flex flex-col gap-1.5 mb-3.5">
                   {navLinks.map((item, idx) => {
                     const active = isActive(item.href);
@@ -337,7 +310,6 @@ export default function Navbar() {
                   })}
                 </ul>
 
-                {/* Quick Direct Donation Card */}
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -389,7 +361,6 @@ export default function Navbar() {
                   </button>
                 </motion.div>
 
-                {/* Creator signature & social links */}
                 <div className="flex flex-wrap items-center justify-between gap-2 pt-2.5 border-t border-white/10 text-xs text-gray-400">
                   <span className="text-[10px] sm:text-[11px]">Crafted with ☕ by MR PATRA</span>
                   <div className="flex items-center gap-3 text-gray-400">
