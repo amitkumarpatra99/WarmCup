@@ -17,7 +17,7 @@ const PaymentPage = () => {
   };
 
   const handleDirectPay = (amountOverride) => {
-    const amountToPay = amountOverride || paymentform.amount
+    const amountToPay = amountOverride || paymentform.amount;
 
     if (!paymentform.name || !amountToPay) {
       alert("Please enter your name and amount before paying!");
